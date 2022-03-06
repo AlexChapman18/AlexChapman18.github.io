@@ -1,0 +1,80 @@
+/* Alex Chapman wrote this */
+/* NAV */
+.navToggle {
+  display: none;
+}
+
+.navList {
+  flex-direction: row;
+}
+
+.navList > li {
+  display: block;
+}
+
+/* MAIN */
+
+.splashImg {
+  width: 30%;
+}
+
+.splashSection {
+  flex-direction: row;
+}
+
+.splashTitle {
+  font-size: 4rem;
+}
+
+.aboutUs {
+  font-size: larger;
+}
+
+/* CARD */
+.cardImg {
+  max-width: 25vw;
+  margin: 1rem auto;
+}
+
+.card_container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* FOUNDERS */
+.foundersContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* NEWS */
+.articlePair {
+  max-width: 80vw;
+  margin: auto;
+}
+
+.articleMain {
+  max-width: 76vw;
+}
+
+/* GAME */
+.gameBlock {
+  grid-template-columns: 1fr 1fr;
+}
+
+.rules {
+  font-size: 100%;
+}
+
+/* ACCESSIBILITY */
+.accessibleGrid {
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+/* FOOTER */
+.footerIcons > * {
+  width: 50px;
+}

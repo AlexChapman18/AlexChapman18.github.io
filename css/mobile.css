@@ -1,0 +1,372 @@
+/* Alex Chapman wrote this */
+/* Declares main colour variables for the website */
+:root {
+  --main_color: #5fb0b7;
+  --card_text_color: darkcyan;
+  --button_color: #6c91bf;
+  --footer_color: gray;
+}
+
+body {
+  margin: 8px 0 0 0;
+  min-width: 300px;
+  background-size: 100% 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Header */
+.Logo {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.nav {
+  background-color: var(--main_color);
+}
+
+.navToggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0.3rem 1rem;
+  right: 0;
+}
+
+.nav_close {
+  display: none;
+}
+
+.navCheckbox {
+  display: none;
+}
+
+.navList {
+  min-height: 2.1rem;
+  margin: 5px 0;
+  list-style: none;
+}
+
+.navList > li {
+  display: none;
+  width: fit-content;
+  margin: 0.3rem 0;
+}
+
+.navToggle > * {
+  width: 40px;
+  height: 40px;
+}
+
+#navCheckbox:checked ~ .navList > li {
+  display: block;
+}
+
+#navCheckbox:checked ~ label.navToggle .nav_close {
+  display: block;
+}
+
+#navCheckbox:checked ~ label.navToggle .nav_open {
+  display: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem 1rem;
+}
+
+.button {
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: var(--button_color);
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 0px 5px 1px gray;
+}
+
+.button:hover {
+  background-color: #a14ebf;
+  cursor: pointer;
+}
+
+/* MAIN */
+.splashSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.splashTitle {
+  text-decoration: underline;
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.splashImg {
+  background-color: black;
+  display: block;
+  margin: 1rem auto;
+  width: 60%;
+}
+
+.splashImg > img {
+  display: block;
+  margin: auto;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  opacity: 0.4;
+}
+
+.splashIntro {
+  max-width: 80vw;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 0.5rem;
+  margin: auto;
+  background-color: var(--main_color);
+}
+
+.splashPara {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.aboutUs {
+  width: 80vw;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: small;
+  background-color: var(--main_color);
+}
+
+/* CARD */
+.cardContainer {
+  margin: 1rem;
+  padding: 1rem 0;
+  border-radius: 20px;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+  background-color: var(--main_color);
+}
+
+.cardImg {
+  max-width: min(90%, 70vw);
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.cardHead {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0.5rem 0;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.cardPara {
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  background-color: var(--card_text_color);
+}
+
+.aboutUsPara {
+  font-size: larger;
+}
+
+/* FOUNDERS */
+.foundersContainer {
+  display: grid;
+  grid-template-columns: 1fr / 1fr / 1fr;
+}
+
+.gamePara {
+  width: fit-content;
+  font-weight: bold;
+}
+
+.newsStyles {
+  font-family: monospace;
+}
+
+/* NEWS */
+.articleMain {
+  max-width: 76vw;
+}
+
+/* GAME */
+.rules > h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 0;
+}
+
+.rules {
+  font-size: 120%;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#canvasArea {
+  border: 3px solid black;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.gameBlock {
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+
+.gameInputs {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.gameButton {
+  margin-right: 1rem;
+}
+
+.ruleHeaders {
+  margin: 0;
+  padding: 0;
+}
+
+.rules > p {
+  margin-top: 0;
+}
+
+/* CONTACT */
+.contactBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputbox {
+  min-width: 200px;
+  min-height: 50px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.contactAddress {
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+#email,
+#from,
+#message {
+  display: block;
+}
+
+#email,
+#from {
+  width: 20%;
+}
+
+#message {
+  margin-top: 0;
+}
+
+.formButton {
+  border-radius: 50px;
+  border: 0;
+  background-color: lightblue;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: background-color 0.5s;
+}
+
+.formButton:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.contactStyle {
+  font-size: larger;
+  font-weight: bold;
+}
+
+/* ACCESSIBILITY */
+.accessibleGrid {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr;
+}
+
+/* Footer */
+footer {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 100%;
+  background-color: var(--footer_color);
+}
+
+.footerHeader {
+  margin-right: 1rem;
+  text-decoration: underline;
+}
+
+footer > * {
+  margin: 0.5rem;
+  align-self: center;
+}
+
+#footerContact {
+  width: fit-content;
+  margin: 0;
+  align-self: center;
+}
+
+#footerCopyright {
+  align-self: center;
+  color: lightgray;
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: space-around;
+  fill: lightblue;
+  padding: 2px 0;
+  border: medium solid black;
+  width: 25vw;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: var(--card_text_color);
+  margin: 0;
+  background-color: lightblu;
+}
+
+.footerIcons > * {
+  width: 40px;
+  filter: invert(91%) sepia(4%) saturate(2670%) hue-rotate(163deg)
+    brightness(93%) contrast(95%);
+}
+
+.social,
+.contact {
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}

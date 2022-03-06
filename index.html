@@ -1,13 +1,92 @@
+<!-- Alex Chapman wrote this -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="author" content="Alex Chapman" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Downloaded from https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="css/desktop.css"
+      media="screen
+      and
+      (min-width:700px)"
+    />
     <title>Document</title>
   </head>
   <body>
-    <h1>header</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, ut!</p>
+    <header>
+      <h1 class="splashTitle">Welcome to Alex Chapman's website</h1>
+      <!-- Nav heavily inspired by, https://www.youtube.com/watch?v=SIzi9z8mrTk&start=45-->
+      <nav class="nav">
+        <input type="checkbox" id="navCheckbox" class="navCheckbox" />
+        <label for="navCheckbox" class="navToggle">
+          <img
+            src="icons/Burger.svg"
+            class="nav_open"
+            alt="Open nav bar button"
+          />
+          <img
+            src="icons/Back.svg"
+            class="nav_close"
+            alt="Close nav bar button"
+          />
+        </label>
+        <ul class="navList">
+          <li class="button"><a href="index.html">Home</a></li>
+          <li class="button"><a href="index.html">Placeholder</a></li>
+          <li class="button"><a href="index.html">Placeholder</a></li>
+          <li class="button"><a href="index.html">Placeholder</a></li>
+          <li class="button"><a href="index.html">Placeholder</a></li>
+          <li class="button"><a href="index.html">Placeholder</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      
+      <img class="splashImg" src="images/Alex.jpg" alt="JimJamers logo" />
+      <div class="splashIntro">
+        <h2 class="cardHead splashIntroTitle">Introduction</h2>
+        <p class="splashPara">
+          This website will most likely be dedicated for web applications and
+          such to remotly control projects. Currently no projects are utalising
+          this side so it will be left empty.
+        </p>
+      </div>
+      <div class="aboutUs">
+        <h2 class="cardHead">About myself</h2>
+        <p class="cardPara aboutUsPara">
+          I like to program dumbest and stupidest shit i can possibly think of,
+          in the hope that the result is somewhat iteresting and entertaining.
+          <br> <strong> Some examples are: </strong>
+          <ul>            
+            <li>Learning to manually decode partial QR codes for an online puzzle </li>
+            <li>Decoding ticket recipt barcodes from an arcade (Worked surprisingly well)</li>
+            <li>Attempting the advent of code every year</li>
+            <li>Making puzzels in Python inspired by NoPixel heists</li>
+            <li>Making an automatic Tesco delivery slot "sniper" </li>
+            <li>A program that uses a camera to look over a pool table and draws a line of where the ball will go depending on the the position and cue (Help from brother) </li>
+            <li>A bot that uses machine learning to enter twitter giveaways (Won a few things, no longer in use)</li>
+            <li>Manually decoding the ArtNet protocol in order to send packets using java (With friend)</li>
+            <li>Attempting to control the lights on a bridge with Art-Net(In progress)</li>
+            <li>Probs some more but i forgot...</li>
+          </ul>
+        </p>
+      </div>
+    </main>
+    <footer>
+      
+      <div class="contact">
+        <h3 class="footerHeader">Contact me?</h3>
+        <p id="footerContact" class="button">
+          <a href="index.html">Placeholder</a>
+        </p>
+      </div>
+      <p id="footerCopyright">&copy;AlexChapman2022</p>
+    </footer>
   </body>
 </html>
