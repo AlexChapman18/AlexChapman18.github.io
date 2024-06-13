@@ -1,0 +1,48 @@
+.nav {
+  height: 2rem;
+  width: 650px;
+}
+
+.nav-title {
+
+}
+
+.nav-title.active {
+
+}
+
+.nav-title {
+
+}
+
+
+// Media Width
+@media (min-width: 576px) {
+  .nav {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nav {
+    max-width: 1320px;
+  }
+}
