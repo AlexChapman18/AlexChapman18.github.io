@@ -8,6 +8,7 @@
 .navbar {
   margin: auto;
   height: 95px;
+
   display:flex;
   justify-content: space-between;
   align-content: center;
@@ -23,7 +24,7 @@
   font-weight: 600;
   margin: 1rem;
 
-  align-content: center;
+  //align-content: center;
 }
 
 .navbar-links-item {
@@ -33,7 +34,7 @@
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
-  padding: 1rem;
+  margin: auto 0 auto 1rem;
 
   align-content: center;
 }
@@ -46,10 +47,54 @@
   color: black;
 }
 
+.navbar-menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+.burger-button {
+  background-color: white;
+  border: 0;
+  display: none;
+}
+
+.brand-button-container {
+  display: flex;
+}
+
+//brand-button
 
 
-@media (min-width: 576px) {
-//  Hamburger menu here
+
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links-item {
+    margin: 0.5rem auto;
+  }
+
+  .navbar-links {
+    background-color: white;
+    flex-direction: column;
+  }
+
+  .burger-button {
+    display: block;
+  }
+
+  .navbar-brand {
+    margin: 1rem auto 0 auto;
+  }
 }
 
 @media (min-width: 768px) {
