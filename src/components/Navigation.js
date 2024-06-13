@@ -1,15 +1,17 @@
-import {Link} from "react-router-dom";
+// Import styles
+import './Navigation.scss';
+
+// Import Router stuff
+import {NavLink} from "react-router-dom";
 
 const Navigation = () => {
   return (
     <>
-        <h1>Navigation!</h1>
-        <nav>
-            <ul>
-                <li> <Link to="/">About</Link> </li>
-                <li> <Link to="/projects">Projects</Link> </li>
-            </ul>
-        </nav>
+      <h1>Navigation!</h1>
+      <nav>
+        <NavLink className={({ isActive }) => isActive && 'active'} to="/">About</NavLink>
+        <NavLink className={({ isActive }) => isActive && 'active'} to="/projects">Projects</NavLink>
+      </nav>
     </>
   );
 }
