@@ -1,7 +1,65 @@
-nav {
-  font-size: xx-large;
+.container {
+  background-color: white;
+
+  display: flex;
+  justify-self: center;
 }
 
-nav a.active {
-  font-weight: bold;
+.navbar {
+  margin: auto;
+  height: 95px;
+  display:flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.navbar-links {
+  display:flex;
+}
+
+.navbar-brand {
+  color: #5F5F5F;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 1rem;
+
+  align-content: center;
+}
+
+.navbar-links-item {
+  transition: 0.3s;
+  color: #444444;
+  //color: #5F5F5F;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1rem;
+
+  align-content: center;
+}
+
+.navbar-links-item:hover {
+  color: black;
+}
+
+.navbar-links-item.active {
+  color: black;
+}
+
+
+
+@media (min-width: 576px) {
+//  Hamburger menu here
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    width: 55%;
+  }
 }

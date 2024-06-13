@@ -1,7 +1,11 @@
+// ---- Imports ----
+// Styles
 import './About.scss';
-import 'bootstrap/dist/css/bootstrap.css';
+
+// Components
 import Layout from '../components/Layout'
 
+// ---- About ----
 function About() {
   return (
     <Layout>

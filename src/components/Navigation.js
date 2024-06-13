@@ -1,18 +1,23 @@
-// Import styles
+// ---- Imports ----
+// Styles
 import './Navigation.scss';
 
-// Import Router stuff
+// Routing
 import {NavLink} from "react-router-dom";
 
+// ---- Navigation ----
 const Navigation = () => {
   return (
-    <>
-      <h1>Navigation!</h1>
-      <nav>
-        <NavLink className={({ isActive }) => isActive && 'active'} to="/">About</NavLink>
-        <NavLink className={({ isActive }) => isActive && 'active'} to="/projects">Projects</NavLink>
-      </nav>
-    </>
+    <div className="container">
+      <div className="navbar">
+        <div className="navbar-brand">Alex Chapman</div>
+        <div className="navbar-links">
+          <NavLink className={({ isActive }) => `navbar-links-item ${isActive ? 'active' : ''}`} to="/">About</NavLink>
+          <NavLink className={({ isActive }) => `navbar-links-item ${isActive ? 'active' : ''}`} to="/projects">Projects</NavLink>
+        </div>
+      </div>
+    </div>
+
   );
 }
 
