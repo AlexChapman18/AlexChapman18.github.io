@@ -1,5 +1,4 @@
 import './About.scss';
-import 'bootstrap/dist/css/bootstrap.css';
 import Layout from '../components/Layout'
 
 function About() {
