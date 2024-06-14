@@ -1,6 +1,10 @@
+// ---- Imports ----
+// Styles
 import './About.scss';
+
 import Layout from '../components/Layout'
 
+// ---- About ----
 function About() {
   return (
     <Layout>

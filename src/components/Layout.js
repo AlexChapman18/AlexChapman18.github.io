@@ -1,5 +1,8 @@
+// ---- Imports ----
+// Styling
 import './Layout.scss';
 
+// Components
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 

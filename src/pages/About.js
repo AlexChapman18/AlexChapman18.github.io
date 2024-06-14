@@ -1,7 +1,10 @@
+// ---- Imports ----
+// Styles
 import './About.scss';
+
 import Layout from '../components/Layout'
 
-function App() {
+function About() {
   return (
     <Layout>
       <h1>About!</h1>
@@ -9,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default About;
