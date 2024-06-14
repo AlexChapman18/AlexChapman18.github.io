@@ -2,6 +2,7 @@
 // Styles
 import './About.scss';
 
+// Components
 import Layout from '../components/Layout'
 
 function About() {
