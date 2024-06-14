@@ -17,6 +17,7 @@ const Navigation = () => {
     <div className="container">
       <nav className="navbar">
         <div className='navbar-title-burger'>
+          <div className='invidible-box'></div>
           <h1 className="navbar-brand">Alex Chapman</h1>
           <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
