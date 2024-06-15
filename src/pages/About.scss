@@ -1,39 +1,31 @@
-.biography {
+
+.about-container {
   width: 40%;
   margin: auto;
+}
 
+.about-container * {
+  padding: 0;
+  margin: 0;
+}
+
+// ----- Bibliography -----
+.biography {
+  margin: auto;
   display: flex;
 }
 
 .biography-text {
 }
 
-.biography-text > * {
-  padding: 0;
-  margin: 0;
-}
-
 .biography-text-title {
-  color: #444444;
-  opacity: 90%;
-  font-size: 40px;
-  font-weight: 600;
-
   padding: 0.5rem 0;
 }
 
 .biography-text-subTitle {
-  color: #000000;
-  opacity: 62%;
-  font-size: 14px;
-  font-weight: 500;
 }
 
 .biography-text-paragraph {
-  color: #000000;
-  opacity: 62%;
-  font-size: 16px;
-
   padding: 0.7rem 0;
 }
 
@@ -49,4 +41,134 @@
 }
 
 .biography-image-blank {
+}
+
+// ----- Interests and Education -----
+.IE {
+  height: 10rem;
+  margin: auto;
+
+  display: grid;
+  //justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-rows-columns: 1fr;
+}
+
+.IE-Interests {
+
+}
+
+.IE-Interests-title {
+
+}
+
+.IE-Interests-list {
+  padding-left: 2rem;
+
+}
+
+.IE-Education {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.IE-Education-title {
+
+}
+
+.IE-Education-education {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.IE-Education-education > * {
+  padding-top: 0.2rem;
+}
+
+
+.IE-Education-education-university {
+  display: flex;
+  flex-direction: row;
+}
+
+.IE-Education-education-university-icon {
+  width: 25px;
+}
+
+.IE-Education-education-university-text {
+
+}
+
+.IE-Education-education > * {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  grid-rows-columns: 25px 1fr;
+  grid-column-gap: 0.5rem;
+}
+
+.IE-Education-education-ALevels-icon {
+  width: 25px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.IE-Education-education .section-text{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  margin-top: auto;
+  margin-bottom: 0.2rem;
+}
+
+.IE-Education-education-ALevels .section-subtext{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+// ----- Education -----
+
+
+// ----- Skills -----
+
+
+
+// ----- Global -----
+.section-title {
+  color: #444444;
+  opacity: 90%;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  color: #000000;
+  opacity: 62%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.section-text {
+  color: #000000;
+  opacity: 62%;
+  font-size: 16px;
+}
+
+.section-subtext {
+  color: #000000;
+  opacity: 70%;
+  font-size: 13px;
+}
+
+.lineSeparator {
+  color: #000000;
+  opacity: 19%;
+  margin: 1rem 0;
 }
