@@ -1,48 +1,215 @@
-.nav {
-  height: 2rem;
-  width: 650px;
+.about-container {
+  margin: auto;
 }
 
-.nav-title {
+.about-container * {
+  padding: 0;
+  margin: 0;
+}
+
+// ----- Bibliography -----
+.biography {
+  margin: auto;
+  display: flex;
+}
+
+.biography-text-title {
+  padding-bottom: 0.5rem;
+}
+
+.biography-text-paragraph {
+  padding: 0.7rem 0;
+}
+
+.biography-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.biography-image-image {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px 1px #777777;
+}
+
+
+// ----- Interests and Education -----
+.IE {
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-rows-columns: 1fr;
+}
+
+.IE-Interests-list {
+  padding-left: 2rem;
 
 }
 
-.nav-title.active {
-
+.IE-Education {
+  display: flex;
+  flex-direction: column;
 }
 
-.nav-title {
+.IE-Education-education {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 
+.IE-Education-education > * {
+  padding-top: 0.2rem;
 }
 
 
-// Media Width
-@media (min-width: 576px) {
-  .nav {
-    max-width: 540px;
+.IE-Education-education-university {
+  display: flex;
+  flex-direction: row;
+}
+
+.IE-Education-education-university-icon {
+  width: 25px;
+}
+
+.IE-Education-education > * {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  grid-rows-columns: 25px 1fr;
+  grid-column-gap: 0.5rem;
+}
+
+.IE-Education-education-ALevels-icon {
+  width: 25px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.IE-Education-education .section-text{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  margin-top: auto;
+  margin-bottom: 0.2rem;
+}
+
+.IE-Education-education-ALevels .section-subtext{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+// ----- Education -----
+.experience-text {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+// ----- Skills -----
+.skills-text {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+
+// ----- Global -----
+.section-title {
+  color: #444444;
+  opacity: 90%;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  color: #000000;
+  opacity: 62%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.section-text {
+  color: #000000;
+  opacity: 62%;
+  font-size: 16px;
+}
+
+.section-subtext {
+  color: #000000;
+  opacity: 70%;
+  font-size: 13px;
+}
+
+.lineSeparator {
+  color: #000000;
+  opacity: 19%;
+  margin: 1rem 0;
+}
+
+//---- Responsive changes -----
+
+
+@media (max-width: 768px) {
+  .about-container {
+    width: 90%;
+  }
+
+  .biography-image-image {
+    width: 250px;
+    align-self: center;
+    margin-top: 1rem;
+  }
+
+  .biography {
+    flex-direction: column-reverse;
   }
 }
+
+@media (max-width: 540px) {
+  .IE {
+    grid-template-columns: 1fr;
+    grid-rows-columns: 1fr 1fr;
+    grid-row-gap: 1rem;
+  }
+
+  .IE-Education-education {
+    margin-left: 1.3rem;
+  }
+}
+
+
 
 @media (min-width: 768px) {
-  .nav {
-    max-width: 720px;
+  .about-container {
+    width: 80%;
+  }
+
+  .biography {
+    flex-direction: row;
   }
 }
 
-@media (min-width: 992px) {
-  .nav {
-    max-width: 960px;
-  }
-}
 
 @media (min-width: 1200px) {
-  .nav {
-    max-width: 1140px;
+  .about-container {
+    width: 60%;
   }
 }
 
+
 @media (min-width: 1400px) {
-  .nav {
-    max-width: 1320px;
+  .about-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .about-container {
+    width: 40%;
   }
 }

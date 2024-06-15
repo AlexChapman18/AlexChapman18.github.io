@@ -144,6 +144,18 @@ $navbar-height: 95px;
 
 @media (min-width: 1200px) {
   .navbar {
-    width: 55%;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .navbar {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .navbar {
+    width: 40%;
   }
 }
