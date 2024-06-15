@@ -68,7 +68,7 @@ function About() {
         </div>
         <hr className='lineSeparator'/>
         <div className='experience'>
-          <h1 className='experience-title section-title'>Education</h1>
+          <h1 className='experience-title section-title'>Experience</h1>
           <p className='experience-text section-text'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim</p>
         </div>
         <hr className='lineSeparator'/>
