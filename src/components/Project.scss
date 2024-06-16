@@ -13,14 +13,9 @@
   font-size: 16px;
 }
 
-.project-toolList {
-  list-style-type: none;
-  padding: 0.5rem 0;
-}
-
 .project-toolList-item {
   float: left;
-  margin: 0 0.1rem;
+  margin: 0.5rem 0.1rem;
   padding: 0.3rem 0.7rem;
   border-radius: 1rem;
 
@@ -32,27 +27,34 @@
   opacity: 100%;
 }
 
-.project-imageText {
+.project-content {
   margin-top: 0.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  //grid-template-rows: 260px;
+  grid-template-rows: auto 1fr 1fr;
   grid-column-gap: 1rem;
+  grid-template-areas:
+    "image text"
+    "image tools"
+    "image links";
 }
 
-
-.project-imageText-container {
-
-}
-
-.project-imageText-image {
+.project-content-image {
   width: 100%;
   border-radius: 1rem;
+
+  grid-area: image;
 }
 
-.project-imageText-text {
+.project-content-text {
   display: flex;
   flex-direction: column;
+  grid-area: text;
+}
+
+.project-content-tools {
+  list-style-type: none;
+  grid-area: tools;
 }
 
 // Project Links
@@ -62,6 +64,7 @@
   width: 90%;
   display: flex;
   flex-direction: row;
+  grid-area: links;
 }
 
 .project-links-github {
@@ -111,3 +114,81 @@
   font-weight: 600;
   padding-left: 0.5rem;
 }
+
+
+// responsive changes
+
+@media (min-width: 0px) {
+  .project-content {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 1rem;
+    grid-template-areas:
+      "image"
+      "text"
+      "tools"
+      "links";
+  }
+}
+
+@media (min-width: 0px) {
+
+}
+
+
+@media (min-width: 740px) {
+  .project-content {
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-template-areas:
+      "image text"
+      "image tools"
+      "image links";
+  }
+
+  .project-links {
+    width: 18rem;
+    margin: 0.5rem auto 0 auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .project-content {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 1rem;
+    grid-template-areas:
+      "image"
+      "text"
+      "tools"
+      "links";
+  }
+
+  .project-links {
+    width: 18rem;
+    margin: 0.5rem auto 0 auto;
+  }
+}
+
+@media (min-width: 1600px) {
+  .project-content {
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-template-areas:
+      "image text"
+      "image tools"
+      "image links";
+  }
+
+  .project-links {
+    width: 18rem;
+    margin: 0.5rem auto 0 auto;
+  }
+}
+
