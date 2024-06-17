@@ -39,10 +39,10 @@ function About() {
               <li>Gaming</li>
               <li>Geocaching</li>
             </ul>
+            <hr className='lineSeparator IE-separator'/>
           </div>
           <div className='IE-Education'>
             <h1 className='IE-Education-title section-title'>Education</h1>
-
             <div className='IE-Education-education'>
               <div className='IE-Education-education-university'>
                 <div className='IE-Education-education-university-icon'>
@@ -53,7 +53,6 @@ function About() {
                   <p className='section-subtext'>The University of Sheffield</p>
                 </div>
               </div>
-
               <div className='IE-Education-education-ALevels'>
                 <div className='IE-Education-education-ALevels-icon'>
                   <School className='IE-Education-education-ALevels-icon'></School>

@@ -4,12 +4,12 @@ import './Project.scss';
 
 // Icons
 import GitHub from "../icons/GitHub";
-import YoutTube from "../icons/YouTube";
+import YouTube from "../icons/YouTube";
 
 // ---- Project ----
-const Project = ({title, text, image, git, YouTube, tool1, tool2, tool3}) => {
+const Project = ({title, text, image, git, youtube, tool1, tool2, tool3}) => {
   const isRepo = git !== null && git !== '';
-  const isVideo = YouTube !== null && YouTube !== '';
+  const isVideo = youtube !== null && youtube !== '';
 
   return (
     <div className="project-container">
@@ -31,9 +31,9 @@ const Project = ({title, text, image, git, YouTube, tool1, tool2, tool3}) => {
             <p className='project-content-links-github-text'>View GitHub</p>
             <GitHub link={''}></GitHub>
           </a>
-          <a href={YouTube} className={`project-content-links-youtube`}>
+          <a href={youtube} className={`project-content-links-youtube`}>
             <p className='project-content-links-youtube-text'>View Video</p>
-            <YoutTube link={''} className='project-content-links-youtube-icon'></YoutTube>
+            <YouTube link={''} className='project-content-links-youtube-icon'></YouTube>
           </a>
         </div>
 
