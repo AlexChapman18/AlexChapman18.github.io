@@ -16,14 +16,16 @@ function About() {
     <Layout>
       <div className='projects-container'>
         <h1 className='projects-title section-title'>Projects</h1>
-        <hr className='lineSeparator'/>
+        <hr className='central-row-divider top-row-divider'/>
         <div className='projects-grid'>
           <IndividualProject
             title='UnPhone Lighting Remote'
             text='Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids. Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids.'
             image={UnPhoneLightingRemote}
             git='https://github.com/KushBharakhada/UnPhone-Foundry-Light-Controller'
-            YouTube='https://youtu.be/TNZxqrxVWRk'
+            // git=''
+            // YouTube='https://youtu.be/TNZxqrxVWRk'
+            YouTube=''
             tool1='Python'
             tool2='OpenCV'
             tool3='TensorFlow'
@@ -34,15 +36,15 @@ function About() {
             title='sACN To Pixelmesh'
             text='Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids. Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids.'
             image={sACNToPixelmesh}
-            git='https://github.com/KushBharakhada/UnPhone-Foundry-Light-Controller'
+            git=''
             YouTube='https://youtu.be/TNZxqrxVWRk'
             tool1='Python'
             tool2='OpenCV'
             tool3='TensorFlow'
           ></IndividualProject>
         </div>
-        <hr className='lineSeparator'/>
-          <div className='projects-grid'>
+        <hr className='central-row-divider'/>
+        <div className='projects-grid'>
           <IndividualProject
             title='UnPhone Lighting Remote'
             text='Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids. Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids.'

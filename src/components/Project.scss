@@ -1,3 +1,9 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .project-title {
   color: #444444;
   opacity: 90%;
@@ -13,22 +19,13 @@
   font-size: 16px;
 }
 
-.project-toolList-item {
-  float: left;
-  margin: 0.5rem 0.1rem;
-  padding: 0.3rem 0.7rem;
-  border-radius: 1rem;
-
-  background-color: #D4D4D8;
-  opacity: 100%;
-
-  font-weight: 600;
-  color: #444444;
-  opacity: 100%;
+.project-content-flex-container {
+  display: flex;
 }
 
 .project-content {
-  margin-top: 0.5rem;
+  flex-grow: 1;
+  //margin-top: 0.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr 1fr;
@@ -55,19 +52,70 @@
 .project-content-tools {
   list-style-type: none;
   grid-area: tools;
+  display: flex;
+}
+
+.project-content-tools-item {
+  margin: 0.5rem 0.1rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 1rem;
+  height: 1rem;
+
+  background-color: #D4D4D8;
+  opacity: 100%;
+
+  font-weight: 600;
+  color: #444444;
 }
 
 // Project Links
-.project-links {
-  margin-top: auto;
+.project-content-links {
   height: 2rem;
-  width: 90%;
   display: flex;
   flex-direction: row;
   grid-area: links;
+
+  width: 18rem;
+  margin: auto auto 0;
 }
 
-.project-links-github {
+.project-content-links.noVideo {
+  margin: auto 0 0;
+
+  .project-content-links-youtube {
+    display: none;
+  }
+
+  .project-content-links-github {
+    border-radius: 1rem 1rem 1rem 1rem;
+  }
+}
+
+.project-content-links.noRepo {
+  margin: auto 0 0;
+  .project-content-links-github {
+    display: none;
+  }
+
+  .project-content-links-youtube {
+    border-radius: 1rem 1rem 1rem 1rem;
+    justify-content: center;
+  }
+
+  .project-content-links-youtube-text {
+    padding-left: 0;
+  }
+}
+
+
+
+
+
+.project-content-links.noRepo .project-content-links-github {
+  display: none;
+}
+
+.project-content-links-github {
   display: flex;
   width: 50%;
   justify-content: flex-end;
@@ -76,13 +124,13 @@
   text-decoration: none;
 }
 
-.project-links-github svg{
+.project-content-links-github svg{
   height: 80%;
   margin: auto 0;
   padding-right: 0.5rem;
 }
 
-.project-links-github-text {
+.project-content-links-github-text {
   display: flex;
   align-items: center;
   padding: 0 0.1rem;
@@ -90,8 +138,7 @@
   font-weight: 600;
 }
 
-
-.project-links-youtube {
+.project-content-links-youtube {
   display: flex;
   width: 50%;
   background-color: #D4D4D8;
@@ -100,12 +147,12 @@
 
 }
 
-.project-links-youtube svg{
+.project-content-links-youtube svg{
   height: 70%;
   margin: auto 0;
 }
 
-.project-links-youtube-text {
+.project-content-links-youtube-text {
   margin: auto 0;
   display: flex;
   align-items: center;
@@ -132,11 +179,49 @@
 }
 
 @media (min-width: 0px) {
+  .project-content-links.noRepo {
+    width: 9rem;
 
+    .project-content-links-youtube {
+      width: 100%;
+    }
+    margin: auto auto 0;
+  }
+
+  .project-content-links.noVideo {
+    width: 9rem;
+
+    .project-content-links-github {
+      width: 100%;
+    }
+    margin: auto auto 0;
+  }
+
+  .project-content-text {
+    padding-top: 0.5rem;
+  }
 }
 
 
 @media (min-width: 740px) {
+  .project-content-links.noRepo {
+    width: 18rem;
+
+    .project-content-links-youtube {
+      width: 50%;
+    }
+    margin: auto 0 0;
+  }
+
+  .project-content-links.noVideo {
+    width: 18rem;
+
+    .project-content-links-github {
+      width: 50%;
+    }
+    margin: auto 0 0;
+  }
+
   .project-content {
     margin-top: 0.5rem;
     display: grid;
@@ -148,14 +233,31 @@
       "image tools"
       "image links";
   }
-
-  .project-links {
-    width: 18rem;
-    margin: 0.5rem auto 0 auto;
-  }
 }
 
 @media (min-width: 1000px) {
+  .project-content-links.noRepo {
+    width: 9rem;
+
+    .project-content-links-youtube {
+      width: 100%;
+    }
+    margin: auto auto 0;
+  }
+
+  .project-content-links.noVideo {
+    width: 9rem;
+
+    .project-content-links-github {
+      width: 100%;
+    }
+    margin: auto auto 0;
+  }
+
+  .project-content-text {
+    padding-top: 0.5rem;
+  }
+
   .project-content {
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -166,14 +268,28 @@
       "tools"
       "links";
   }
-
-  .project-links {
-    width: 18rem;
-    margin: 0.5rem auto 0 auto;
-  }
 }
 
 @media (min-width: 1600px) {
+  .project-content-links.noRepo {
+    width: 18rem;
+
+    .project-content-links-youtube {
+      width: 50%;
+    }
+    margin: auto 0 0;
+  }
+
+  .project-content-links.noVideo {
+    width: 18rem;
+
+    .project-content-links-github {
+      width: 50%;
+    }
+    margin: auto 0 0;
+  }
+
+
   .project-content {
     margin-top: 0.5rem;
     display: grid;
@@ -184,11 +300,6 @@
       "image text"
       "image tools"
       "image links";
-  }
-
-  .project-links {
-    width: 18rem;
-    margin: 0.5rem auto 0 auto;
   }
 }
 
