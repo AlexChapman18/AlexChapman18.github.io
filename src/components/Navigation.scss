@@ -82,7 +82,15 @@ $navbar-height: 95px;
 
 //brand-button
 
+.IE-separator {
+  display: none !important;
+}
 
+@media (max-width: 540px) {
+  .IE-separator {
+    display: block !important;
+  }
+}
 
 
 @media (min-width: 450px) {

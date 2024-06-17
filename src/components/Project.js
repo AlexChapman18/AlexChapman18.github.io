@@ -4,7 +4,7 @@ import './Project.scss';
 
 // Icons
 import GitHub from "../icons/GitHub";
-import YoutTube from "../icons/YouTube";
+import YouTube from "../icons/YouTube";
 
 // ---- Project ----
 const Project = ({title, text, image, git, YouTube, tool1, tool2, tool3}) => {
@@ -33,7 +33,7 @@ const Project = ({title, text, image, git, YouTube, tool1, tool2, tool3}) => {
           </a>
           <a href={YouTube} className={`project-content-links-youtube`}>
             <p className='project-content-links-youtube-text'>View Video</p>
-            <YoutTube link={''} className='project-content-links-youtube-icon'></YoutTube>
+            <YouTube link={''} className='project-content-links-youtube-icon'></YouTube>
           </a>
         </div>
 
