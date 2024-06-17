@@ -2,6 +2,9 @@ $navbar-height: 95px;
 
 
 .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
   background-color: white;
 
   display: flex;
@@ -59,7 +62,6 @@ $navbar-height: 95px;
 
 .navbar-menu {
     display: none;
-    position: absolute;
     top: 0.75rem;
     right: 0.5rem;
     flex-direction: column;
@@ -129,10 +131,7 @@ $navbar-height: 95px;
   }
 
   .navbar-links.open {
-    position: relative;
-
     transform: translateY(0);
-
   }
 }
 
