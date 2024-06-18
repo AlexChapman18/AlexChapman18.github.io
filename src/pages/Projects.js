@@ -116,6 +116,7 @@ function About() {
         {/*  ></IndividualProject>*/}
         {/*</div>*/}
         {/*<hr className='lineSeparator'/>*/}
+        <hr className='central-row-divider'/>
       </div>
     </Layout>
   );
