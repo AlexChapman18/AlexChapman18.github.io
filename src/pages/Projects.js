@@ -9,6 +9,8 @@ import IndividualProject from "../components/Project";
 // Images
 import UnPhoneLightingRemote from '../images/UnPhone-Lighting-Remote.png'
 import sACNToPixelmesh from '../images/sACN-To-Pixelmesh.png'
+import MinecraftTosACN from '../images/Minecraft-To-sACN.png'
+import AdventOfCode from '../images/Advent-Of-Code.jpg'
 
 // ---- About ----
 function About() {
@@ -20,102 +22,54 @@ function About() {
         <div className='projects-grid'>
           <IndividualProject
             title='UnPhone Lighting Remote'
-            text='Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids. Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids.'
+            text='A compact, battery-powered IoT device designed to wirelessly control the RGB LED strips at the Foundry live events venue in the University of Sheffield&apos;s Student Union. This device offers a variety of effects and colors, allowing users to tailor the lighting to their needs, all managed via the unPhone.'
             image={UnPhoneLightingRemote}
             git='https://github.com/KushBharakhada/UnPhone-Foundry-Light-Controller'
-            // git=''
-            // YouTube='https://youtu.be/TNZxqrxVWRk'
-            youtube=''
-            tool1='IOT'
-            tool2='C++'
+            youtube='https://youtu.be/TNZxqrxVWRk'
+            tool1='C++'
+            tool2='IOT'
             tool3='Art-Net'
           ></IndividualProject>
           <div className='mid-column-divider column-divider'></div>
           <hr className='mid-row-divider row-divider'/>
           <IndividualProject
-            title='sACN To Pixelmesh'
-            text='Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids. Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids.'
+            title='Lighting Video-Wall Controller'
+            text='This program acts as a bridge between lighting devices and video-wall controllers. It converts lighting control packets into a format the video-wall controller can understand, outputting the result as a video signal via HDMI. This enables more synchronized video and lighting during events.'
             image={sACNToPixelmesh}
-            git=''
-            youtube='https://youtu.be/TNZxqrxVWRk'
-            tool1='Python'
-            tool2='OpenCV'
-            tool3='TensorFlow'
+            git='https://github.com/AlexChapman18/sACN-To-Pixelmesh'
+            youtube='https://youtu.be/qS68SA1V0hA'
+            tool1='Java'
+            tool2='Networking'
+            tool3='sACN'
           ></IndividualProject>
         </div>
         <hr className='central-row-divider'/>
+
+
         <div className='projects-grid'>
           <IndividualProject
-            title='UnPhone Lighting Remote'
-            text='Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids. Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids.'
-            image={UnPhoneLightingRemote}
-            git='https://github.com/KushBharakhada/UnPhone-Foundry-Light-Controller'
-            youtube='https://youtu.be/TNZxqrxVWRk'
-            tool1='Python'
-            tool2='OpenCV'
-            tool3='TensorFlow'
+            title='Minecraft To Lighting'
+            text='A modded Minecraft client that outputs sACN packets to control lighting fixtures via in-game commands. This project was created solely for fun, with no larger purpose. It helped improve my skills in Java and networking while allowing me to enjoy playing video games.'
+            image={MinecraftTosACN}
+            git='https://github.com/AlexChapman18/Minecraft-To-sACN.git'
+            youtube='https://youtu.be/P5lE6-vAPsU?si=HgN7iDyYY9yvcoOu'
+            tool1='Java'
+            tool2='Networking'
+            tool3='sACN'
           ></IndividualProject>
           <div className='mid-column-divider column-divider'></div>
           <hr className='mid-row-divider row-divider'/>
           <IndividualProject
-            title='sACN To Pixelmesh'
-            text='Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids. Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids.'
-            image={sACNToPixelmesh}
-            git='https://github.com/KushBharakhada/UnPhone-Foundry-Light-Controller'
-            youtube='https://youtu.be/TNZxqrxVWRk'
-            tool1='Python'
-            tool2='OpenCV'
-            tool3='TensorFlow'
+            title='Advent Of Code'
+            text='"Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like.". I participate in this annual challenge for enjoyment, competing with friends for fun, whilst improving my programming and problem solving skills.'
+            image={AdventOfCode}
+            git='https://github.com/AlexChapman18/Advent-of-code-2022'
+            youtube=''
+            tool1='Haskell'
+            tool2='Java'
+            tool3='Python'
           ></IndividualProject>
         </div>
-        {/*<div className='projects-grid'>*/}
-        {/*  <IndividualProject*/}
-        {/*    title='UnPhone Lighting Remote'*/}
-        {/*    text='Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids. Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids.'*/}
-        {/*    image={UnPhoneLightingRemote}*/}
-        {/*    git='https://github.com/KushBharakhada/UnPhone-Foundry-Light-Controller'*/}
-        {/*    YouTube='https://youtu.be/TNZxqrxVWRk'*/}
-        {/*    tool1='Python'*/}
-        {/*    tool2='OpenCV'*/}
-        {/*    tool3='TensorFlow'*/}
-        {/*  ></IndividualProject>*/}
-        {/*  <div className='column-divider'></div>*/}
-        {/*  <IndividualProject*/}
-        {/*    title='sACN To Pixelmesh'*/}
-        {/*    text='Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids. Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids.'*/}
-        {/*    image={sACNToPixelmesh}*/}
-        {/*    git='https://github.com/KushBharakhada/UnPhone-Foundry-Light-Controller'*/}
-        {/*    YouTube='https://youtu.be/TNZxqrxVWRk'*/}
-        {/*    tool1='Python'*/}
-        {/*    tool2='OpenCV'*/}
-        {/*    tool3='TensorFlow'*/}
-        {/*  ></IndividualProject>*/}
-        {/*</div>*/}
-        {/*<hr className='lineSeparator'/>*/}
-        {/*        <div className='projects-grid'>*/}
-        {/*  <IndividualProject*/}
-        {/*    title='UnPhone Lighting Remote'*/}
-        {/*    text='Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids. Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids.'*/}
-        {/*    image={UnPhoneLightingRemote}*/}
-        {/*    git='https://github.com/KushBharakhada/UnPhone-Foundry-Light-Controller'*/}
-        {/*    YouTube='https://youtu.be/TNZxqrxVWRk'*/}
-        {/*    tool1='Python'*/}
-        {/*    tool2='OpenCV'*/}
-        {/*    tool3='TensorFlow'*/}
-        {/*  ></IndividualProject>*/}
-        {/*  <div className='column-divider'></div>*/}
-        {/*  <IndividualProject*/}
-        {/*    title='sACN To Pixelmesh'*/}
-        {/*    text='Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids. Solving sudokus using computer vision to extract boards from unprocessed input images and developing a backtracking algorithm to furthermore solve the grids.'*/}
-        {/*    image={sACNToPixelmesh}*/}
-        {/*    git='https://github.com/KushBharakhada/UnPhone-Foundry-Light-Controller'*/}
-        {/*    YouTube='https://youtu.be/TNZxqrxVWRk'*/}
-        {/*    tool1='Python'*/}
-        {/*    tool2='OpenCV'*/}
-        {/*    tool3='TensorFlow'*/}
-        {/*  ></IndividualProject>*/}
-        {/*</div>*/}
-        {/*<hr className='lineSeparator'/>*/}
       </div>
     </Layout>
   );
