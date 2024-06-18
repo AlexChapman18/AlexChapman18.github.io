@@ -43,8 +43,8 @@ function About() {
             tool3='sACN'
           ></IndividualProject>
         </div>
-        <hr className='central-row-divider'/>
 
+        <hr className='central-row-divider'/>
 
         <div className='projects-grid'>
           <IndividualProject
@@ -70,6 +70,25 @@ function About() {
             tool3='Python'
           ></IndividualProject>
         </div>
+
+        <hr className='central-row-divider'/>
+
+        <div className='projects-grid'>
+          <IndividualProject
+            title=''
+            text=''
+            image={MinecraftTosACN}
+            git=''
+            youtube=''
+            tool1=''
+            tool2=''
+            tool3=''
+          ></IndividualProject>
+          <div className='mid-column-divider column-divider'></div>
+          <hr className='mid-row-divider row-divider'/>
+          <div></div>
+        </div>
+
         <hr className='central-row-divider'/>
       </div>
     </Layout>
