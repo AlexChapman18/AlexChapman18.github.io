@@ -128,7 +128,7 @@ $min-rows-for-projects: 2;
 
   .projects-grid {
     display: grid;
-    grid-template-columns: auto 1px auto;
+    grid-template-columns: 1fr 1px 1fr;
     grid-template-rows: auto;
     grid-column-gap: 2rem;
   }
