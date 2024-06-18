@@ -70,7 +70,6 @@ function About() {
             tool3='Python'
           ></IndividualProject>
         </div>
-
         <hr className='central-row-divider'/>
       </div>
     </Layout>
