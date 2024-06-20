@@ -87,7 +87,7 @@ function About() {
             tool3='Networking'
           ></IndividualProject>
           <div className='mid-column-divider column-divider'></div>
-          <hr className='mid-row-divider row-divider'/>
+          {/*<hr className='mid-row-divider row-divider'/>*/}
           <div></div>
         </div>
 
