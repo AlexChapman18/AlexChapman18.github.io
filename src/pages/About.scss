@@ -153,7 +153,12 @@
 .lineSeparator {
   color: #000000;
   opacity: 19%;
-  margin: 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lineSeparator.bottom-seperator {
+  margin-bottom: 1.7rem;
 }
 
 //---- Responsive changes -----
