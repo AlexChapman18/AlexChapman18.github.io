@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.d92a9fa1.css",
-    "main.js": "/static/js/main.1825b258.js",
+    "main.css": "/static/css/main.98e2c1fd.css",
+    "main.js": "/static/js/main.6e692ba4.js",
     "static/js/453.aac68abc.chunk.js": "/static/js/453.aac68abc.chunk.js",
     "static/media/UnPhone-Lighting-Remote.png": "/static/media/UnPhone-Lighting-Remote.84281aa6db05c3c4b363.png",
     "static/media/sACN-To-Pixelmesh.png": "/static/media/sACN-To-Pixelmesh.6b67be0504496d8fb2da.png",
+    "static/media/Minecraft-To-sACN.png": "/static/media/Minecraft-To-sACN.1fe10da5d54cfe25f131.png",
     "static/media/Alex_holiday.png": "/static/media/Alex_holiday.385a0392f2625f59b01e.png",
+    "static/media/Grass-Landers.png": "/static/media/Grass-Landers.659b7d2ae54e9126fb27.png",
+    "static/media/Advent-Of-Code.jpg": "/static/media/Advent-Of-Code.5fcbdb8fbd26049594ad.jpg",
     "index.html": "/index.html",
-    "main.d92a9fa1.css.map": "/static/css/main.d92a9fa1.css.map",
-    "main.1825b258.js.map": "/static/js/main.1825b258.js.map",
+    "main.98e2c1fd.css.map": "/static/css/main.98e2c1fd.css.map",
+    "main.6e692ba4.js.map": "/static/js/main.6e692ba4.js.map",
     "453.aac68abc.chunk.js.map": "/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d92a9fa1.css",
-    "static/js/main.1825b258.js"
+    "static/css/main.98e2c1fd.css",
+    "static/js/main.6e692ba4.js"
   ]
 }
