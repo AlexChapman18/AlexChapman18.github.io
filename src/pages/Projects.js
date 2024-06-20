@@ -26,7 +26,7 @@ function About() {
             title='UnPhone Lighting Remote'
             text='A compact, battery-powered IoT device designed to wirelessly control the RGB LED strips at the Foundry live events venue in the University of Sheffield&apos;s Student Union. This device offers a variety of effects and colors, allowing users to tailor the lighting to their needs, all managed via the unPhone.'
             image={UnPhoneLightingRemote}
-            git='https://github.com/KushBharakhada/UnPhone-Foundry-Light-Controller'
+            git='https://github.com/AlexChapman18/UnPhone-Foundry-Light-Controller'
             youtube='https://youtu.be/TNZxqrxVWRk'
             tool1='C++'
             tool2='IOT'
