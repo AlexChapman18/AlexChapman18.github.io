@@ -11,6 +11,8 @@ import UnPhoneLightingRemote from '../images/UnPhone-Lighting-Remote.png'
 import sACNToPixelmesh from '../images/sACN-To-Pixelmesh.png'
 import MinecraftTosACN from '../images/Minecraft-To-sACN.png'
 import AdventOfCode from '../images/Advent-Of-Code.jpg'
+import GrassLanders from '../images/Grass-Landers.png'
+
 
 // ---- About ----
 function About() {
@@ -75,14 +77,14 @@ function About() {
 
         <div className='projects-grid'>
           <IndividualProject
-            title=''
-            text=''
-            image={MinecraftTosACN}
-            git=''
+            title='Grass Landers'
+            text='Grass Landers is a multiplayer sprite-based game currently in development. The aim of this project is to learn and practice server-client networking and work with OpenGL. So far, a client can connect to the server and load/render the game map. The next stage involves refactoring for improved readability and adding multi-client support.'
+            image={GrassLanders}
+            git='https://github.com/AlexChapman18/Grass-Landers.git'
             youtube=''
-            tool1=''
-            tool2=''
-            tool3=''
+            tool1='Java'
+            tool2='OpenGL'
+            tool3='Networking'
           ></IndividualProject>
           <div className='mid-column-divider column-divider'></div>
           <hr className='mid-row-divider row-divider'/>
