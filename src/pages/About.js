@@ -39,8 +39,8 @@ function About() {
               <li>Gaming</li>
               <li>Geocaching</li>
             </ul>
-            <hr className='lineSeparator IE-separator'/>
           </div>
+          <hr className='lineSeparator IE-separator'/>
           <div className='IE-Education'>
             <h1 className='IE-Education-title section-title'>Education</h1>
             <div className='IE-Education-education'>
@@ -75,6 +75,7 @@ function About() {
           <h1 className='skills-title section-title'>Skills</h1>
           <p className='skills-text section-text'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim</p>
         </div>
+        <hr className='lineSeparator bottom-seperator'/>
       </div>
     </Layout>
   );
