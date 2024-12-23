@@ -13,6 +13,10 @@
   display: flex;
 }
 
+.biography-text {
+  padding-right: 1rem;
+}
+
 .biography-text-title {
   padding-bottom: 0.3rem;
   padding-top: 1rem;
@@ -167,6 +171,10 @@
 @media (max-width: 768px) {
   .about-container {
     width: 90%;
+  }
+
+  .biography-text {
+    padding-right: 0rem;
   }
 
   .biography-image-image {

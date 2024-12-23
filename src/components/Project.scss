@@ -39,6 +39,7 @@
 .project-content-image {
   width: 100%;
   border-radius: 1rem;
+  box-shadow: 2px 2px 5px 1px #777777;
 
   grid-area: image;
 }
@@ -53,13 +54,17 @@
   list-style-type: none;
   grid-area: tools;
   display: flex;
+  color: #000000;
+  margin-bottom: 0.2rem;
 }
 
 .project-content-tools-item {
   margin: 0.5rem 0.1rem;
   padding: 0.3rem 0.7rem;
   border-radius: 1rem;
-  height: 1rem;
+  height: 1.2rem;
+  box-shadow: 2px 2px 5px 1px #777777;
+
 
   background-color: #D4D4D8;
   opacity: 100%;
@@ -73,7 +78,7 @@
   height: 2rem;
   display: flex;
   flex-direction: row;
-  grid-area: links;
+  grid-area: links;  
 
   width: 18rem;
   margin: auto auto 0;
@@ -88,6 +93,8 @@
 
   .project-content-links-github {
     border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 2px 2px 5px 1px #777777;
+
   }
 }
 
@@ -100,6 +107,8 @@
   .project-content-links-youtube {
     border-radius: 1rem 1rem 1rem 1rem;
     justify-content: center;
+    box-shadow: 2px 2px 5px 1px #777777;
+
   }
 
   .project-content-links-youtube-text {
@@ -122,6 +131,7 @@
   background-color: #444444;
   border-radius: 1rem 0 0 1rem;
   text-decoration: none;
+  box-shadow: 2px 2px 5px 1px #777777;
 }
 
 .project-content-links-github svg{
@@ -144,6 +154,7 @@
   background-color: #D4D4D8;
   border-radius: 0 1rem 1rem 0;
   text-decoration: none;
+  box-shadow: 2px 2px 5px 1px #777777;
 
 }
 
@@ -267,6 +278,13 @@
       "text"
       "tools"
       "links";
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-content-image {
+    width: 80%;
+    justify-self: center;
   }
 }
 
