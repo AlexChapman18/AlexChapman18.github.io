@@ -64,7 +64,7 @@ function About() {
           <hr className='mid-row-divider row-divider'/>
           <IndividualProject
             title='Advent Of Code'
-            text='"Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like.". I participate in this annual challenge for enjoyment, competing with friends for fun, whilst improving my programming and problem solving skills.'
+            text='Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like.". I participate in this annual challenge for enjoyment, competing with friends for fun, whilst improving my programming and problem solving skills.'
             image={AdventOfCode}
             git='https://github.com/AlexChapman18/Advent-of-code-2022'
             youtube=''
