@@ -59,7 +59,7 @@
   margin: 0.5rem 0.1rem;
   padding: 0.3rem 0.7rem;
   border-radius: 1rem;
-  height: 1.2rem;
+  height: 1rem;
 
   background-color: #D4D4D8;
   opacity: 100%;
@@ -267,6 +267,13 @@
       "text"
       "tools"
       "links";
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-content-image {
+    width: 80%;
+    justify-self: center;
   }
 }
 
