@@ -12,6 +12,7 @@ import sACNToPixelmesh from '../images/sACN-To-Pixelmesh.png'
 import MinecraftTosACN from '../images/Minecraft-To-sACN.png'
 import AdventOfCode from '../images/Advent-Of-Code.jpg'
 import GrassLanders from '../images/Grass-Landers.png'
+import SpaceCraft from '../images/SpaceCraft.png'
 
 
 // ---- About ----
@@ -49,15 +50,15 @@ function About() {
         <hr className='central-row-divider'/>
 
         <div className='projects-grid'>
-          <IndividualProject
-            title='Minecraft To Lighting'
-            text='A modded Minecraft client that outputs sACN packets to control lighting fixtures via in-game commands. This project was created solely for fun, with no larger purpose. It helped improve my skills in Java and networking while allowing me to enjoy playing video games.'
-            image={MinecraftTosACN}
-            git='https://github.com/AlexChapman18/Minecraft-To-sACN.git'
-            youtube='https://youtu.be/P5lE6-vAPsU?si=HgN7iDyYY9yvcoOu'
+        <IndividualProject
+            title='Spacecraft Scene'
+            text='This program uses modern OpenGL to render a dynamic spacecraft scene, featuring hierarchical scene graphs for easy animation and object positioning. It provides interactive controls for both a spotlight and a point light source, allowing for precise lighting adjustments. Finally, custom textures were used throughout, to enhance the spacecraft aesthetic.'
+            image={SpaceCraft}
+            git=''
+            youtube='https://youtu.be/Rr4XtydU3oQ?si=4u-90s1G0cf65myK'
             tool1='Java'
-            tool2='Networking'
-            tool3='sACN'
+            tool2='OpenGL'
+            tool3='Shaders'
           ></IndividualProject>
           <div className='mid-column-divider column-divider'></div>
           <hr className='mid-row-divider row-divider'/>
@@ -87,8 +88,17 @@ function About() {
             tool3='Networking'
           ></IndividualProject>
           <div className='mid-column-divider column-divider'></div>
-          {/*<hr className='mid-row-divider row-divider'/>*/}
-          <div></div>
+          <hr className='mid-row-divider row-divider'/>
+          <IndividualProject
+            title='Minecraft To Lighting'
+            text='A modded Minecraft client that outputs sACN packets to control lighting fixtures via in-game commands. This project was created solely for fun, with no larger purpose. It helped improve my skills in Java and networking while allowing me to enjoy playing video games.'
+            image={MinecraftTosACN}
+            git='https://github.com/AlexChapman18/Minecraft-To-sACN.git'
+            youtube='https://youtu.be/P5lE6-vAPsU?si=HgN7iDyYY9yvcoOu'
+            tool1='Java'
+            tool2='Networking'
+            tool3='sACN'
+          ></IndividualProject>
         </div>
 
         <hr className='central-row-divider'/>
