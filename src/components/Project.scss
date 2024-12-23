@@ -62,6 +62,8 @@
   padding: 0.3rem 0.7rem;
   border-radius: 1rem;
   height: 1.2rem;
+  box-shadow: 2px 2px 5px 1px #777777;
+
 
   background-color: #D4D4D8;
   opacity: 100%;
@@ -76,6 +78,7 @@
   display: flex;
   flex-direction: row;
   grid-area: links;
+  
 
   width: 18rem;
   margin: auto auto 0;
@@ -90,6 +93,8 @@
 
   .project-content-links-github {
     border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 2px 2px 5px 1px #777777;
+
   }
 }
 
@@ -102,6 +107,8 @@
   .project-content-links-youtube {
     border-radius: 1rem 1rem 1rem 1rem;
     justify-content: center;
+    box-shadow: 2px 2px 5px 1px #777777;
+
   }
 
   .project-content-links-youtube-text {
@@ -124,6 +131,7 @@
   background-color: #444444;
   border-radius: 1rem 0 0 1rem;
   text-decoration: none;
+  box-shadow: 2px 2px 5px 1px #777777;
 }
 
 .project-content-links-github svg{
@@ -146,6 +154,7 @@
   background-color: #D4D4D8;
   border-radius: 0 1rem 1rem 0;
   text-decoration: none;
+  box-shadow: 2px 2px 5px 1px #777777;
 
 }
 
