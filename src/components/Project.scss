@@ -55,6 +55,7 @@
   grid-area: tools;
   display: flex;
   color: #000000;
+  margin-bottom: 0.2rem;
 }
 
 .project-content-tools-item {
@@ -77,8 +78,7 @@
   height: 2rem;
   display: flex;
   flex-direction: row;
-  grid-area: links;
-  
+  grid-area: links;  
 
   width: 18rem;
   margin: auto auto 0;
