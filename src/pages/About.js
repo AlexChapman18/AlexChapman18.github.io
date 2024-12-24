@@ -74,7 +74,8 @@ function About() {
         <hr className='lineSeparator'/>
         <div className='skills'>
           <h1 className='skills-title section-title'>Skills</h1>
-          <p className='skills-text section-text'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim</p>
+          {/* <p className='skills-text section-text'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim</p> */}
+          <p className='skills-text section-text'>My skills include being a team leader, having lead a software development team in several course modules to success.   </p>
         </div>
         <hr className='lineSeparator bottom-seperator'/>
       </div>
