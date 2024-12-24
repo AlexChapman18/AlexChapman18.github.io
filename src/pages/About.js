@@ -70,12 +70,15 @@ function About() {
         <div className='experience'>
           <h1 className='experience-title section-title'>Experience</h1>
           <p className='experience-text section-text'>
-          Having worked in the live events industry for the past 4 years, I have gained significant hands-on experience being both a stage manager and team member in excess of 100 individual events, ranging from gigs and club nights to awards ceremonies at the Sheffield Uni. External to the university, I have also worked as the head lighting engineer for a 3-day rock festival at the O2 Academy Sheffield.          </p>
+            Having worked in the live events industry for the past 4 years, I have gained significant hands-on experience being both a stage manager and team member in excess of 100 individual events, ranging from gigs and club nights to awards ceremonies at the Sheffield Uni. External to the university, I have also worked as the head lighting engineer for a 3-day rock festival at the O2 Academy Sheffield.
+          </p>
         </div>
         <hr className='lineSeparator'/>
         <div className='skills'>
           <h1 className='skills-title section-title'>Skills</h1>
-          <p className='skills-text section-text'>My skills: Advanced Git, </p>
+          <p className='skills-text section-text'>
+            With a diverse background, having worked in both the live events and software development industries, I have developed a strong skill set in stage management, team collaboration, and technical operations. My expertise includes software testing and verification, web development with Ruby on Rails, proficiency in Python and Java programming, and a diverse knowledge in system networking. Additionally, I have extensive experience with Git version control, including techniques like branching, rebasing, cherry-picking, and repository management.
+          </p>
         </div>
         <hr className='lineSeparator bottom-seperator'/>
       </div>
