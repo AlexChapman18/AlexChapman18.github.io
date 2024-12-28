@@ -15,7 +15,7 @@ const Navigation = () => (
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
-        <Nav className="fs-3 ms-auto" navbarScroll>
+        <Nav className="fs-4 fw-bold ms-auto" navbarScroll>
           <NavLink className="nav-link" to="/">
             About
           </NavLink>
