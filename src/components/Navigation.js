@@ -1,32 +1,27 @@
 // ---- Imports ----
-// Styles
-import './Navigation.scss';
 
 // Routing
 import {NavLink} from "react-router-dom";
 
 // Burger menu
-import Hamburger from 'hamburger-react'
-import {useState} from "react";
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 // ---- Navigation ----
 const Navigation = () => {
-  const [isOpen, setOpen] = useState(false)
-
   return (
-    <div className="container">
-      <nav className="navbar">
-        <div className='navbar-title-burger'>
-          <div className='invidible-box'></div>
-          <h1 className="navbar-brand">Alex Chapman</h1>
-          <Hamburger toggled={isOpen} toggle={setOpen} />
-        </div>
-        <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-          <NavLink className={({ isActive }) => `navbar-links-item ${isActive ? 'active' : ''}`} to="/">About</NavLink>
-          <NavLink className={({ isActive }) => `navbar-links-item ${isActive ? 'active' : ''}`} to="/projects">Projects</NavLink>
-        </div>
-      </nav>
-    </div>
+    <Navbar expand="lg py-0" className="bg-body-tertiary">
+      <div className="container">
+        <Navbar.Brand className="fs-1 fw-bold text-primary" href="#">Alex Chapman</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav className="navbar-nav fs-3 ms-auto" navbarScroll>
+            <NavLink className="nav-link" to="/">About</NavLink>
+            <NavLink className="nav-link" to="/projects">Projects</NavLink>
+          </Nav>
+        </Navbar.Collapse>
+      </div>
+    </Navbar>
   );
 }
 
