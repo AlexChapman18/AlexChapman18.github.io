@@ -2,7 +2,7 @@
 // Styles
 import "./Project.scss";
 
-import ProjectLinks from "./ProjectLinks";
+import ProjectLinks from "./sub_components/ProjectLinks";
 
 // ---- Project ----
 const Project = ({ title, text, image, git, youtube, tool1, tool2, tool3 }) => {
@@ -11,7 +11,7 @@ const Project = ({ title, text, image, git, youtube, tool1, tool2, tool3 }) => {
       <h2 className="project-title">{title}</h2>
       <div className="project-content">
         <img
-          className="project-content-image"
+          className="project-content-image global-box-shadow"
           src={image}
           alt="Project"
           loading="lazy"

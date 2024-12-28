@@ -3,8 +3,8 @@
 import "./ProjectLinks.scss";
 
 // Icons
-import GitHub from "../icons/GitHub";
-import YouTube from "../icons/YouTube";
+import GitHub from "../../icons/GitHub";
+import YouTube from "../../icons/YouTube";
 
 // ---- Project ----
 const ProjectLinks = ({ git, youtube }) => {
@@ -19,7 +19,7 @@ const ProjectLinks = ({ git, youtube }) => {
       {hasRepo && (
         <a
           href={git}
-          className={`project-link-git fw-bold`}
+          className={`project-link-git fw-bold global-box-shadow`}
           disabled={!hasRepo}
         >
           <p>View GitHub</p>
@@ -27,7 +27,10 @@ const ProjectLinks = ({ git, youtube }) => {
         </a>
       )}
       {hasVideo && (
-        <a href={youtube} className={`project-link-youtube fw-bold`}>
+        <a
+          href={youtube}
+          className={`project-link-youtube fw-bold global-box-shadow`}
+        >
           <p>View Video</p>
           <YouTube />
         </a>
