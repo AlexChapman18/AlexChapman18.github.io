@@ -1,0 +1,53 @@
+.project-links {
+  display: flex;
+  justify-self: center;
+
+  > * {
+    height: 2rem;
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px 1px #777777;
+    padding: 0 0.8rem;
+    text-decoration: none;
+    margin: auto 0;
+
+    svg {
+      margin: auto 0;
+      padding-left: 0.2rem;
+    }
+
+    p {
+      margin: auto 0;
+    }
+  }
+
+  .project-link-git {
+    color: #d1d1d1;
+    background-color: #444444;
+
+    svg {
+      height: 80%;
+    }
+  }
+
+  .project-link-youtube {
+    color: #000000;
+    background-color: #d4d4d8;
+
+    svg {
+      height: 70%;
+    }
+  }
+
+  &.hasRepo.hasVideo {
+    .project-link-git {
+      border-radius: 1rem 0 0 1rem;
+      padding-right: 0.4rem;
+    }
+
+    .project-link-youtube {
+      border-radius: 0 1rem 1rem 0;
+      padding-left: 0.4rem;
+    }
+  }
+}
