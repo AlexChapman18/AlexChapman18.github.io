@@ -16,7 +16,7 @@ const Project = ({title, text, image, git, youtube, tool1, tool2, tool3}) => {
       <h2 className='project-title'>{title}</h2>
       <div className='project-content'>
 
-        <img className='project-content-image' src={image} alt="Image of project" loading="lazy" />
+        <img className='project-content-image' src={image} alt="Project" loading="lazy" />
 
         <p className='project-content-text section-text'>{text}</p>
 
