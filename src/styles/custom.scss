@@ -4,15 +4,28 @@ $primary: #555555; // set the $primary variable
 @import "~bootstrap/scss/bootstrap";
 
 // ----- Override Widths -----
-@media (min-width: 992px) {
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 550px;
+  }
+}
+
+@media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
 }
 
+@media (min-width: 992px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
 @media (min-width: 1200px) {
   .container {
-    max-width: 860px;
+    max-width: 1040px;
   }
 }
 

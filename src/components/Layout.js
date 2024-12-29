@@ -1,19 +1,17 @@
 // ---- Imports ----
-// Styling
-import './Layout.scss';
 
 // Components
-import Navigation from '../components/Navigation'
-import Footer from '../components/Footer'
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
-const Layout = ({children}) => {
- return (
-  <div className={'flex-wrapper'}>
-    <Navigation />
-    <main>{children}</main>
-    <Footer />
-  </div>
- )
-}
+const Layout = ({ children }) => {
+  return (
+    <div>
+      <Navigation />
+      <main>{children}</main>
+      <Footer />
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;
