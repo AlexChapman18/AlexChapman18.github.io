@@ -1,7 +1,6 @@
 // ----- Imports -----
 import './Footer.scss';
 
-
 // Icons
 import LinkedIn from "../icons/LinkedIn";
 import GitHub from "../icons/GitHub";
@@ -11,17 +10,15 @@ import WrittenByHuman from "../icons/WrittenByHuman";
 
 const Footer = () => {
   return (
-    <div className={'footer-container'}>
-      <div className={'width-footer-container'}>
-        <div className={'socials-icon-container'}>
-          <LinkedIn link={'https://linkedin.com/in/alex-chapman-8aa194221'}></LinkedIn>
-          <GitHub link={'https://github.com/AlexChapman18'}></GitHub>
-          <Mail link={'mailto:alex.d.chapman@outlook.com'}></Mail>
-          <YoutTube link={'https://youtube.com/@agent2153?si=7UgNKrEC7La6xFzW'}></YoutTube>
-        </div>
-        <div className={'WBH-icon-container'}>
-          <WrittenByHuman link={'https://notbyai.fyi/'}></WrittenByHuman>
-        </div>
+    <div className={'footer-container mx-auto'}>
+      <div className={'d-flex justify-content-between h-50'}>
+        <LinkedIn link={'https://linkedin.com/in/alex-chapman-8aa194221'}></LinkedIn>
+        <GitHub link={'https://github.com/AlexChapman18'}></GitHub>
+        <Mail link={'mailto:alex.d.chapman@outlook.com'}></Mail>
+        <YoutTube link={'https://youtube.com/@agent2153?si=7UgNKrEC7La6xFzW'}></YoutTube>
+      </div>
+      <div className={'d-flex justify-content-center h-75 pt-2'}>
+        <WrittenByHuman link={'https://notbyai.fyi/'}></WrittenByHuman>
       </div>
     </div>
   );

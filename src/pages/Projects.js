@@ -18,11 +18,11 @@ import SpaceCraft from "../images/SpaceCraft.png";
 function About() {
   return (
     <Layout>
-      <div className="container px-0">
+      <div className="projects-container container">
         <h1 className="text-center text-primary fw-bold mt-3">Projects</h1>
         <hr className="horizontal-linebreak bg-dark opacity-25" />
         {/* Projects */}
-        <div className="px-0 projects-container projects-grid">
+        <div className="px-0 projects-row">
           <Project
             title="UnPhone Lighting Remote"
             text="A compact, battery-powered IoT device designed to wirelessly control the RGB LED strips at the Foundry live events venue in the University of Sheffield's Student Union. This device offers a variety of effects and colors, allowing users to tailor the lighting to their needs, all managed via the unPhone."
@@ -32,7 +32,7 @@ function About() {
             tool1="C++"
             tool2="IOT"
             tool3="Art-Net"
-          ></Project>
+          />
           <hr className="optional-linebreak horizontal-linebreak bg-dark opacity-25" />
           <div className="verticle-linebreak px-0 my-5 bg-dark opacity-25" />
           <Project
@@ -44,12 +44,12 @@ function About() {
             tool1="Java"
             tool2="Networking"
             tool3="sACN"
-          ></Project>
+          />
         </div>
 
         <hr className="horizontal-linebreak bg-dark opacity-25" />
 
-        <div className="px-0 projects-container projects-grid">
+        <div className="px-0 projects-row">
           <Project
             title="Spacecraft Scene"
             text="This program uses modern OpenGL to render a dynamic spacecraft scene, featuring hierarchical scene graphs for easy animation and object positioning. It provides interactive controls for both a spotlight and a point light source, allowing for precise lighting adjustments. Finally, custom textures were used throughout, to enhance the spacecraft aesthetic."
@@ -59,7 +59,7 @@ function About() {
             tool1="Java"
             tool2="OpenGL"
             tool3="Shaders"
-          ></Project>
+          />
           <hr className="optional-linebreak horizontal-linebreak bg-dark opacity-25" />
           <div className="verticle-linebreak px-0 my-5 bg-dark opacity-25" />
           <Project
@@ -71,12 +71,12 @@ function About() {
             tool1="Haskell"
             tool2="Java"
             tool3="Python"
-          ></Project>
+          />
         </div>
 
         <hr className="horizontal-linebreak bg-dark opacity-25" />
 
-        <div className="px-0 projects-container projects-grid">
+        <div className="px-0 projects-row">
           <Project
             title="Grass Landers"
             text="Grass Landers is a multiplayer sprite-based game currently in development. The aim of this project is to learn and practice server-client networking and work with OpenGL. So far, a client can connect to the server and load/render the game map. The next stage involves refactoring for improved readability and adding multi-client support."
@@ -86,7 +86,7 @@ function About() {
             tool1="Java"
             tool2="OpenGL"
             tool3="Networking"
-          ></Project>
+          />
           <hr className="optional-linebreak horizontal-linebreak bg-dark opacity-25" />
           <div className="verticle-linebreak px-0 my-5 bg-dark opacity-25" />
           <Project
@@ -98,7 +98,7 @@ function About() {
             tool1="Java"
             tool2="Networking"
             tool3="sACN"
-          ></Project>
+          />
         </div>
         <hr className="horizontal-linebreak bg-dark opacity-25" />
       </div>

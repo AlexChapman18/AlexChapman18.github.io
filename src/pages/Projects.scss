@@ -1,9 +1,10 @@
 // ---- Line Breaks ----
 .verticle-linebreak {
-  width: 2px;
+  width: 1px;
 }
+
 .horizontal-linebreak {
-  height: 2px;
+  height: 1px;
 }
 
 .verticle-linebreak {
@@ -38,8 +39,8 @@
   }
 }
 
-// ---- Projects Container ----
-.projects-container {
+// ---- Projects Row ----
+.projects-row {
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
@@ -57,7 +58,17 @@
     grid-template-columns: 1fr auto 1fr;
   }
 
-  @media (min-width: 1200px), (min-width: 1400px) {
+  @media (min-width: 1200px),
+  (min-width: 1400px) {
     width: 1040px;
+  }
+}
+
+// ---- Projects Container ----
+.projects-container {
+  padding: 0 1rem;
+
+  @media (min-width: 576px) {
+    padding: 0 0;
   }
 }
