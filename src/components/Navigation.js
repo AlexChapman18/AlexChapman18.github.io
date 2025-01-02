@@ -8,7 +8,7 @@ import { Nav, Navbar } from "react-bootstrap";
 
 // ---- Navigation ----
 const Navigation = () => (
-  <Navbar expand="lg" className="bg-body-tertiary py-0">
+  <Navbar expand="lg" className="bg-body-tertiary py-3">
     <div className="container">
       <Navbar.Brand className="fs-1 fw-bold text-primary" href="#">
         Alex Chapman

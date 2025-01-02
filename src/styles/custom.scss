@@ -1,7 +1,14 @@
 // ----- Override Variables -----
 $primary: #555555; // set the $primary variable
 
+
+
 @import "~bootstrap/scss/bootstrap";
+
+// ----- Override Line Height -----
+:root {
+  --bs-body-line-height: 1.2rem;
+}
 
 // ----- Override Widths -----
 
