@@ -1,26 +1,28 @@
 // ----- Override Variables -----
-$primary: #555555; // set the $primary variable
-
-
+$primary: #555555; // set the Primary text color
+$enable-rfs: false; // Disable Responsive Font Sizes
 
 @import "~bootstrap/scss/bootstrap";
 
 // ----- Override Line Height -----
 :root {
   --bs-body-line-height: 1.2rem;
+  --bs-heading-color: #555555;
+  --bs-body-color: #555555;
 }
 
 // ----- Override Widths -----
 
+
 @media (min-width: 576px) {
   .container {
-    max-width: 550px;
+    max-width: 992px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 768px;
   }
 }
 

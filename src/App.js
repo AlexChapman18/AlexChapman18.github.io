@@ -1,6 +1,4 @@
 // ---- Imports ----
-// Global Styles
-import './App.scss';
 
 // Pages
 import About from "./pages/About";

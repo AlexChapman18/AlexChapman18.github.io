@@ -13,27 +13,24 @@ import School from "../icons/School";
 function About() {
   return (
     <Layout>
-      <div className='container'>
-        <div className='biography'>
-          <div className='biography-text'>
-            <h1 className='biography-text-title section-title'>Biography</h1>
-            <h2 className='biography-text-subTitle section-subtitle'>Masters Computer Science Student at The University of Sheffield</h2>
-            <p className='biography-text-paragraph section-text'>
+      <div className='container mt-4'>
+        <div className='biography-container'>
+          <div>
+            <h1 className='fs-1 fw-bold'>Biography</h1>
+            <h2 className='biography-subtitle'>Masters Computer Science Student at The University of Sheffield</h2>
+            <p>
               I’m a 4th year Masters Computer Science student at the University of Sheffield, passionate in software development and live events production. Outside of my degree, I have undertaken a variety of both personal and group projects, applying and improving my knowledge. Some examples can be seen on my projects page.</p>
-            <p className='biography-text-paragraph section-text'>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet venenatis urna cursus eget nunc scelerisque viverra. Sit amet facilisis magna etiam tempor. Euismod elementum nisi quis eleifend. Mauris augue neque gravida in fermentum. In metus vulputate eu scelerisque felis imperdiet proin. At auctor urna nunc id cursus metus aliquam eleifend. Enim blandit volutpat maecenas volutpat. Sit amet nisl purus in mollis nunc sed id. Sit amet nisl purus in mollis nunc sed id. Sit amet nisl purus in mollis nunc sed id.
             </p>
           </div>
-          <div className='biography-image'>
-            <img className='biography-image-image global-box-shadow' src={bio_pic} alt="Alex_Holiday"  loading="lazy" />
-            <div className='biography-image-blank'></div>
-          </div>
+          <img className='biography-image global-box-shadow rounded-circle' src={bio_pic} alt="Alex_Holiday" loading="lazy" />
         </div>
         <hr className="horizontal-linebreak bg-dark opacity-25" />
-        <div className='IE'>
-          <div className='IE-Interests'>
-            <h1 className='IE-Interests-title section-title'>Interests</h1>
-            <ul className='IE-Interests-list section-text'>
+        <div className='mt-4 IE-container'>
+          <div className="container">
+            <h1 className='fw-bold'>Interests</h1>
+            <ul>
               <li>Live Events Production</li>
               <li>Programming Projects</li>
               <li>Gaming</li>
@@ -41,25 +38,23 @@ function About() {
               <li>Skiing</li>
             </ul>
           </div>
-          <hr className="horizontal-linebreak bg-dark opacity-25" />
-          <div className='IE-Education'>
-            <h1 className='IE-Education-title section-title'>Education</h1>
-            <div className='IE-Education-education'>
-              <div className='IE-Education-education-university'>
-                <div className='IE-Education-education-university-icon'>
+          <hr className="horizontal-linebreak bg-dark opacity-25 IE-linebreak" />
+          <div className="container">
+            <h1 className='fw-bold'>Education</h1>
+            <div>
+              <div className='education-grid'>
+                <div className='education-icon'>
                   <GraduationCap></GraduationCap>
                 </div>
-                <div className='IE-Education-education-university-text'>
-                  <p className='section-text'>Masters in Computer Science, 2025</p>
-                  <p className='section-subtext'>The University of Sheffield</p>
-                </div>
+                <p className='education-title mt-auto mb-0'>Masters in Computer Science, 2025</p>
+                <p className='education-content section-subtext mb-0'>The University of Sheffield</p>
               </div>
-              <div className='IE-Education-education-ALevels'>
-                <div className='IE-Education-education-ALevels-icon'>
-                  <School className='IE-Education-education-ALevels-icon'></School>
+              <div className='education-grid'>
+                <div className='education-icon'>
+                  <School></School>
                 </div>
-                <p className='section-text'>A-levels, 2020</p>
-                <p className='section-subtext'>Computer Science, Maths, Physics, <br />Further Maths (AS-Level)</p>
+                <p className='education-title mt-auto mb-0'>A-levels, 2020</p>
+                <p className='education-content section-subtext mb-0'>Computer Science, Maths, Physics, <br />Further Maths (AS-Level)</p>
               </div>
             </div>
           </div>
@@ -80,7 +75,7 @@ function About() {
         </div>
         <hr className="horizontal-linebreak bg-dark opacity-25" />
       </div>
-    </Layout>
+    </Layout >
   );
 }
 

@@ -19,7 +19,7 @@ function About() {
   return (
     <Layout>
       <div className="projects-container container">
-        <h1 className="text-center text-primary fw-bold mt-3">Projects</h1>
+        <h1 className="text-center fw-bold mt-3">Projects</h1>
         <hr className="horizontal-linebreak bg-dark opacity-25" />
         {/* Projects */}
         <div className="px-0 projects-row">
