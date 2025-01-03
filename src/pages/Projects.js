@@ -22,7 +22,7 @@ function About() {
         <h1 className="text-center fw-bold mt-3">Projects</h1>
         <hr className="horizontal-linebreak bg-dark opacity-25" />
         {/* Projects */}
-        <div className="px-0 projects-row">
+        <div className="projects-row">
           <Project
             title="UnPhone Lighting Remote"
             text="A compact, battery-powered IoT device designed to wirelessly control the RGB LED strips at the Foundry live events venue in the University of Sheffield's Student Union. This device offers a variety of effects and colors, allowing users to tailor the lighting to their needs, all managed via the unPhone."
@@ -49,7 +49,7 @@ function About() {
 
         <hr className="horizontal-linebreak bg-dark opacity-25" />
 
-        <div className="px-0 projects-row">
+        <div className="projects-row">
           <Project
             title="Spacecraft Scene"
             text="This program uses modern OpenGL to render a dynamic spacecraft scene, featuring hierarchical scene graphs for easy animation and object positioning. It provides interactive controls for both a spotlight and a point light source, allowing for precise lighting adjustments. Finally, custom textures were used throughout, to enhance the spacecraft aesthetic."
@@ -76,7 +76,7 @@ function About() {
 
         <hr className="horizontal-linebreak bg-dark opacity-25" />
 
-        <div className="px-0 projects-row">
+        <div className="projects-row">
           <Project
             title="Grass Landers"
             text="Grass Landers is a multiplayer sprite-based game currently in development. The aim of this project is to learn and practice server-client networking and work with OpenGL. So far, a client can connect to the server and load/render the game map. The next stage involves refactoring for improved readability and adding multi-client support."

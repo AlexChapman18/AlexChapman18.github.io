@@ -1,14 +1,15 @@
 // ----- Override Variables -----
-$primary: #555555; // set the Primary text color
+// $primary: #555555; // set the Primary text color
 $enable-rfs: false; // Disable Responsive Font Sizes
 
+// @import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/flatly/variables";
 @import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/flatly/bootswatch";
 
 // ----- Override Line Height -----
 :root {
   --bs-body-line-height: 1.2rem;
-  --bs-heading-color: #555555;
-  --bs-body-color: #555555;
 }
 
 // ----- Override Widths -----

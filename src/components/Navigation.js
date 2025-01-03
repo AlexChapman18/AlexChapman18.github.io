@@ -11,9 +11,9 @@ import { Nav, Navbar } from "react-bootstrap";
 
 // ---- Navigation ----
 const Navigation = () => (
-  <Navbar expand="lg" className="bg-body-tertiary py-3">
+  <Navbar expand="lg" className="bg-body-tertiary py-3" data-bs-theme="dark">
     <div className="container">
-      <Navbar.Brand className="navigation-title fw-bold text-primary m-0" href="#">
+      <Navbar.Brand className="navigation-title fw-bold m-0" href="#">
         Alex Chapman
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />

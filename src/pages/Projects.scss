@@ -32,7 +32,7 @@
   grid-template-columns: 1fr;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 991px) {
   .project-container {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
@@ -43,18 +43,12 @@
 .projects-row {
   display: grid;
   grid-template-columns: 1fr;
-  width: 100%;
-
-  @media (min-width: 576px) {
-    width: 550px;
-  }
 
   @media (min-width: 768px) {
-    width: 720px;
+    padding: 0 0;
   }
 
   @media (min-width: 992px) {
-    width: 900px;
     grid-template-columns: 1fr auto 1fr;
   }
 
@@ -68,7 +62,7 @@
 .projects-container {
   padding: 0 1rem;
 
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     padding: 0 0;
   }
 }
