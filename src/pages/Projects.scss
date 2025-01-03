@@ -45,7 +45,7 @@
   grid-template-columns: 1fr;
 
   @media (min-width: 768px) {
-    padding: 0 0;
+    padding: 0;
   }
 
   @media (min-width: 992px) {
@@ -63,6 +63,6 @@
   padding: 0 1rem;
 
   @media (min-width: 768px) {
-    padding: 0 0;
+    padding: 0;
   }
 }

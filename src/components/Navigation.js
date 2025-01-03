@@ -3,6 +3,8 @@
 // Styles
 import './Navigation.scss';
 
+import ThemeSwitch from "./sub_components/ThemeSwitch";
+
 // Routing
 import { NavLink } from "react-router-dom";
 
@@ -26,6 +28,7 @@ const Navigation = () => (
             Projects
           </NavLink>
         </Nav>
+        <ThemeSwitch></ThemeSwitch>
       </Navbar.Collapse>
     </div>
   </Navbar>
