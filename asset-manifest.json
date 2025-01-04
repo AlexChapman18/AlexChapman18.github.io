@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.65cab2f1.css",
+    "main.css": "/static/css/main.97c7a832.css",
     "main.js": "/static/js/main.ff89d989.js",
     "static/js/453.aac68abc.chunk.js": "/static/js/453.aac68abc.chunk.js",
     "static/media/UnPhone-Lighting-Remote.png": "/static/media/UnPhone-Lighting-Remote.84281aa6db05c3c4b363.png",
@@ -11,12 +11,12 @@
     "static/media/Grass-Landers.png": "/static/media/Grass-Landers.659b7d2ae54e9126fb27.png",
     "static/media/Advent-Of-Code.jpg": "/static/media/Advent-Of-Code.5fcbdb8fbd26049594ad.jpg",
     "index.html": "/index.html",
-    "main.65cab2f1.css.map": "/static/css/main.65cab2f1.css.map",
+    "main.97c7a832.css.map": "/static/css/main.97c7a832.css.map",
     "main.ff89d989.js.map": "/static/js/main.ff89d989.js.map",
     "453.aac68abc.chunk.js.map": "/static/js/453.aac68abc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65cab2f1.css",
+    "static/css/main.97c7a832.css",
     "static/js/main.ff89d989.js"
   ]
 }
