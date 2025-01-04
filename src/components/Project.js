@@ -1,45 +1,38 @@
 // ---- Imports ----
 // Styles
-import './Project.scss';
+import "./Project.scss";
 
-// Icons
-import GitHub from "../icons/GitHub";
-import YouTube from "../icons/YouTube";
+import ProjectLinks from "./sub_components/ProjectLinks";
 
 // ---- Project ----
-const Project = ({title, text, image, git, youtube, tool1, tool2, tool3}) => {
-  const isRepo = git !== null && git !== '';
-  const isVideo = youtube !== null && youtube !== '';
-
+const Project = ({ title, text, image, git, youtube, tool1, tool2, tool3 }) => {
   return (
-    <div className="project-container">
-      <h2 className='project-title'>{title}</h2>
-      <div className='project-content'>
-
-        <img className='project-content-image' src={image} alt="Image of project" loading="lazy" />
-
-        <p className='project-content-text section-text'>{text}</p>
-
-        <ul className='project-content-tools'>
-          <li className='project-content-tools-item'>{tool1}</li>
-          <li className='project-content-tools-item'>{tool2}</li>
-          <li className='project-content-tools-item'>{tool3}</li>
-        </ul>
-
-        <div className={`project-content-links ${isRepo ? 'hasRepo' : 'noRepo'} ${isVideo ? 'hasVideo' : 'noVideo'}`}>
-          <a href={git} className='project-content-links-github'>
-            <p className='project-content-links-github-text'>View GitHub</p>
-            <GitHub link={''}></GitHub>
-          </a>
-          <a href={youtube} className={`project-content-links-youtube`}>
-            <p className='project-content-links-youtube-text'>View Video</p>
-            <YouTube link={''} className='project-content-links-youtube-icon'></YouTube>
-          </a>
+    <div className="px-0">
+      <h2 className="fw-bold fs-3 text-center">{title}</h2>
+      <div className="project-container">
+        <div className="project-content-image-container">
+          <img
+            className="project-content-image rounded-4 border border-5 border-primary"
+            src={image}
+            alt="Project"
+            loading="lazy"
+          />
         </div>
 
+        <div className="container-fluid">
+          <p className="mb-2">{text}</p>
+
+          <ul className="list-unstyled mb-2 fs-5">
+            <li className="project-tool badge rounded-pill bg-primary">{tool1}</li>
+            <li className="project-tool badge rounded-pill bg-primary">{tool2}</li>
+            <li className="project-tool badge rounded-pill bg-primary">{tool3}</li>
+          </ul>
+
+          <ProjectLinks git={git} youtube={youtube}></ProjectLinks>
+        </div>
       </div>
     </div>
   );
-}
+};
 
-export default Project
+export default Project;

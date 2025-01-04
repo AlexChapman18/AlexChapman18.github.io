@@ -1,6 +1,6 @@
 const School = () => {
 	return (
-		<svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" link="http://www.w3.org/1999/xlink" viewBox="0 0 511 511" space="preserve">
+		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" link="http://www.w3.org/1999/xlink" viewBox="0 0 511 511" space="preserve">
 			<g>
 				<path d="M503.5,476H487V267h16.5c2.737,0,5.257-1.491,6.575-3.891c1.317-2.4,1.222-5.327-0.247-7.636l-56-88
 					c-1.377-2.164-3.763-3.474-6.328-3.474H298.606L263,128.394V99h72.5c2.766,0,5.308-1.522,6.613-3.961
